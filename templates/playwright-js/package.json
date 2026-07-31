@@ -1,6 +1,11 @@
 {
-  "name": "api-framework-generator-skill",
+  "name": "playwright-api-template",
   "version": "1.0.0",
-  "description": "AI Skill that generates production-ready Playwright API automation frameworks.",
-  "private": true
+  "description": "Playwright API automation template",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0"
+  }
 }

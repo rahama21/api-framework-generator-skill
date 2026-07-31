@@ -2,28 +2,32 @@
 
 ## Overview
 
-API Framework Generator is an AI Skill that generates a complete API automation testing framework based on user requirements.
+API Framework Generator is an AI Skill that generates a Playwright API automation testing framework from a natural language prompt.
 
-The generated project follows best practices and provides a ready-to-use project structure.
+The generated project follows a reusable structure and provides a ready-to-run API automation framework.
 
 ---
 
 ## Features
 
-- Generate Playwright API Framework
-- Generate Rest Assured Framework
-- Generate Pytest API Framework
-- Support multiple authentication methods
-- Generate reusable folder structure
-- Generate configuration files
+- Generate Playwright API Framework (JavaScript)
+- Detect GET and POST API operations
+- Generate reusable project structure
+- Generate Playwright configuration
 - Generate sample API tests
-- Generate README and environment files
+- Generate environment template
+- Generate project from reusable templates
 
 ---
 
-## Supported Frameworks
+## Current Implementation
 
-- Playwright (JavaScript)
+- ✅ Playwright (JavaScript)
+
+---
+
+## Planned Support
+
 - Playwright (TypeScript)
 - Rest Assured (Java)
 - Pytest (Python)
@@ -32,33 +36,51 @@ The generated project follows best practices and provides a ready-to-use project
 
 ## Example Prompt
 
-Generate an API framework.
-
-Framework: Playwright
-
-Language: JavaScript
-
-Authentication: Bearer Token
-
-Base URL: https://api.example.com
-
-Reporting: HTML
+```
+Create a production-ready Playwright API framework with GET and POST automation.
+```
 
 ---
 
-## Generated Output
+## Generated Project
 
-The skill generates:
+The generated framework contains:
 
-- package.json
-- playwright.config.js
-- tests/
-- utils/
-- helpers/
-- config/
-- fixtures/
-- .env.example
-- README.md
+```
+generated-framework/
+│
+├── package.json
+├── playwright.config.js
+├── tests/
+│   ├── getUsers.spec.js
+│   └── createPost.spec.js
+├── helpers/
+├── config/
+└── .env.example
+```
+
+---
+
+## Verification
+
+The generated framework was verified by executing:
+
+```bash
+npm install
+npx playwright install
+npx playwright test
+```
+
+Result:
+
+```
+Running 2 tests using 2 workers
+
+✓ POST Create User
+✓ GET Users API
+
+2 passed
+```
 
 ---
 

@@ -1,0 +1,6 @@
+{
+  "name": "api-framework-generator-skill",
+  "version": "1.0.0",
+  "description": "AI Skill that generates production-ready Playwright API automation frameworks.",
+  "private": true
+}

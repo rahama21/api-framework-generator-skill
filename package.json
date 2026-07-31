@@ -1,0 +1,7 @@
+{
+  "name": "api-framework-generator-skill",
+  "version": "1.0.0",
+  "description": "AI Skill for generating production-ready Playwright API automation frameworks",
+  "author": "Rahama Trisha",
+  "license": "MIT"
+}

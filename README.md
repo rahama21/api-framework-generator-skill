@@ -36,7 +36,7 @@ The generated project follows a reusable structure and provides a ready-to-run A
 
 ## Example Prompt
 
-```
+```text
 Create a production-ready Playwright API framework with GET and POST automation.
 ```
 
@@ -44,9 +44,7 @@ Create a production-ready Playwright API framework with GET and POST automation.
 
 ## Generated Project
 
-The generated framework contains:
-
-```
+```text
 generated-framework/
 │
 ├── package.json
@@ -71,15 +69,15 @@ npx playwright install
 npx playwright test
 ```
 
-Result:
+### Result
 
-```
+```text
 Running 2 tests using 2 workers
 
 ✓ POST Create User
 ✓ GET Users API
 
-2 passed
+2 passed (2.0s)
 ```
 
 ---
@@ -92,4 +90,4 @@ Reduce the time required to create a production-ready API automation framework b
 
 ## Author
 
-Rahama Trisha
+**Rahama Trisha**
